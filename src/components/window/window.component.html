@@ -1,6 +1,10 @@
 <div
     class="project-board position-relative">
-    <img [src]="projects[currentIndex].image" alt="{{ projects[currentIndex].name }}" class="project-img" />
+    <img 
+        [src]="projects[currentIndex].image" 
+        alt="{{ projects[currentIndex].name }}" 
+        class="project-img"
+        [class.fade-out]="fade" />
 
     <div class="overlay d-flex flex-column align-items-center justify-content-center">
         <h2 class="fw-bold">{{ projects[currentIndex].name }}</h2>
